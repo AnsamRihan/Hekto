@@ -25,6 +25,7 @@ a{
     position: fixed;
     width: 100%;
     top: 0;
+    padding: 25px 0;
 }
 
 .header ul{
@@ -40,22 +41,26 @@ a{
 }
 
 .container{
-    width: 1177px;
-    margin: auto;
-    gap: 227px;
+    width: 100%;
+    padding: 0 335px; 
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .header .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 122px;
 }
 
 .left-side{
     display: flex;
     gap: 88px;
     align-items: center;
+}
+
+.right-side{
+    margin-left: 227px;
 }
 
 .list ul{
