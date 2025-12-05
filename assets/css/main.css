@@ -42,18 +42,18 @@ a{
 
 .container{
     width: 100%;
-    padding: 0 335px; 
+    padding: 0 70px; 
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .header .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.left-side{
+/*.left-side{
     display: flex;
     gap: 88px;
     align-items: center;
@@ -61,7 +61,7 @@ a{
 
 .right-side{
     margin-left: 227px;
-}
+}*/
 
 .list ul{
     display: flex;
