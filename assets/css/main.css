@@ -51,17 +51,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
-
-/*.left-side{
-    display: flex;
-    gap: 88px;
-    align-items: center;
-}
-
-.right-side{
-    margin-left: 227px;
-}*/
 
 .list ul{
     display: flex;
@@ -98,4 +89,23 @@ a{
 
 .header .list a:hover{
     color: var(--list-item-picked-color);
+}
+
+.header .menu{
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:1100px) {
+    .header .list,
+    .header .form{
+        display: none;
+    }
+
+    .header .menu{
+        display: block;
+    }
+
+    .container{
+        padding: 0 30px; 
+    }
 }
