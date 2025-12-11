@@ -8,6 +8,7 @@
     --primary-background-color: white;
     --secondary-background-color:#EEEFFB; 
     --footer-text-color: #8A8FB9;
+    --background-text-color: #151875;
 }
 /*
 --------------------------------------------
@@ -64,6 +65,10 @@ Start header
 .header .form img{
     width: 24px;
     height: 24px;
+}
+
+.header .form button{
+    padding: 8px 13px;
 }
 
 .header .menu{
@@ -210,3 +215,66 @@ Start footer
 }
 
 /*End Footer*/
+
+/*
+--------------------------------------------
+Start Background Section
+--------------------------------------------
+*/
+
+.backgroundSection{
+    background-image: url(./../images/Rectangle102.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    background-color: #0D0E43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.backgroundSectionContent{
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundSectionContent h3{
+    font-size: 35px;
+    color: var(--background-text-color);
+    font-weight: 700;
+    line-height: 155%;
+}
+
+.backgroundSectionContent .btn{
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--secondary-background-color);
+    width: fit-content;
+    font-size: 17px;
+}
+
+@media screen and (min-width:0) and (max-width:800px) {
+
+    .backgroundSectionContent h3{
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+    .backgroundSectionContent .btn{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1200px) {
+
+    .backgroundSectionContent h3{
+        font-size: 27px;
+        line-height: 125%;
+    }
+}
