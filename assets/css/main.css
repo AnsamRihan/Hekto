@@ -233,6 +233,7 @@ Start Background Section
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .backgroundSectionContent{
@@ -242,6 +243,7 @@ Start Background Section
     gap: 28px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .backgroundSectionContent h3{
