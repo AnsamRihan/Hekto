@@ -31,7 +31,7 @@ input {
 }
 
 .btn{
-    background-color: var(--button-color);
+    background-color: var(--pink-main-color);
     border: 0;
     padding: 10px 40px;
 }
