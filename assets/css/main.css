@@ -628,6 +628,18 @@ Start latest products Section
     .featuredProducts .container h2, .latest-products .container h2{
         font-size: 33px;
     }
+
+    .latest-products .products-lists .products .row {
+        row-gap: 40px;
+    }
+
+    .latest-products .products-lists ul{
+        font-size: 16px;
+    }
+
+    .latest-products .products-lists {
+        gap:40px
+    }
 }
 
 @media screen and (min-width:0) and (max-width: 500px) {
@@ -640,12 +652,13 @@ Start latest products Section
     .latest-products .products .product .product-img-container {
         height: 200px;
     }
-}
 
-@media screen and (min-width:501px) and (max-width: 800px) {
+    .latest-products .products-lists ul{
+        font-size: 14px;
+    }
 
-    .latest-products .products-lists .products .row {
-        row-gap: 40px;
+    .latest-products .products-lists {
+        gap:30px
     }
 }
 
