@@ -849,4 +849,48 @@ Start footer
 
 }
 
+@media screen and (min-width:501px) and (max-width: 800px) {
+    .featuredProducts .products .row{
+        gap: 25px;
+    }
+
+    .featuredProducts .products .product{
+        width: calc((100% - 25px) / 2);
+    }
+
+    .featuredProducts .container h2, .latest-products .container h2{
+        font-size: 33px;
+    }
+}
+
+@media screen and (min-width:0) and (max-width: 500px) {
+    .footer .list .col {
+        gap: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 10px 5px;
+    }
+
+    .footer .left-side .form button {
+        font-size: 12px;
+    }
+
+    .footer .left-side .address h2, .footer .left-side .address p {
+        font-size: 14px;
+    }
+
+    .footer .list h2 {
+        font-size: 20px;
+    }
+
+    .footer .list ul {
+        font-size: 14px;
+    }
+}   
+
+
 /*End Footer*/
