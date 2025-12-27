@@ -10,6 +10,7 @@
     --text-color: #151875;
     --h2-color: #1A0B5B;
     --product-card-img-background-color: #F6F7FB;
+    --hero-bg-color: #F2F0FF;
 }
 /*
 --------------------------------------------
@@ -92,194 +93,82 @@ Start header
 }
 /* End header */
 
-.data{
-    padding: 100px 0;
-}
-
 /*
 --------------------------------------------
-Start footer
+Start Hero Section
 --------------------------------------------
 */
 
-.footer{
-    background-color: var(--secondary-background-color);
-    padding: 100px 0;
+.hero{
+    background-color: var(--hero-bg-color);
+    padding: 40px 0;
 }
 
-.footer .row{
-    align-items: flex-start;
-    gap: 30px
-}
-
-.footer .left-side{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 30px;
-    width: calc( (100% - 30px) / ( 8 / 3 ) );
-}
-
-.footer .left-side form{
-    gap: 0;
-    border-radius: 3px;
-    background-color: var(--primary-background-color);
-}
-
-.footer .left-side form input{
-    border-radius: 3px;
-    padding: 15px 20px;
-    width: 240px;
-}
-
-
-.footer .left-side form input::placeholder{
-    color: #8A8FB9;
-}
-
-.footer .left-side .form button{
-    color: var(--secondary-background-color);
-    border-radius: 3px;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    margin: 3px;
-}
-
-.footer .left-side .address .col{
-    gap: 10px;
-}
-
-.footer .left-side .address h2, 
-.footer .left-side .address p
-{
-    font-size: 16px;
-    color: var(--footer-text-color);
-    font-weight: 400;
-}
-
-.footer .right-side{
-    width: calc( (100% - 30px) / ( 8 / 5) );
-}
-
-.footer .list .col{
-    gap: 45px;
-    flex-wrap: wrap;
-}
-
-.footer .list h2{
-    font-size: 22px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 600;
-}
-
-.footer .list ul{
-    display: flex;
-    flex-direction: column;
-    gap: 23.32px;
-}
-
-.footer .list li a{
-    color: var(--footer-text-color);
-}
-
-@media screen and (min-width:0) and (max-width:1200px) {
-
-    .btn{
-        padding: 10px 20px;
-    }
-
-    .footer .left-side{
-        width: 100%;
-    }
-
-    .footer .right-side{
-        width: 100%;
-    }
-
-    .footer .left-side form input{
-        padding: 7px 10px;
-    }
-
-    .footer .left-side form input{
-        width: fit-content;
-    }
-
-    .footer .list{
-        gap: 30px;
-    }
-
-}
-
-/*End Footer*/
-
-/*
---------------------------------------------
-Start Background Section
---------------------------------------------
-*/
-
-.backgroundSection{
-    background-image: url(./../images/Rectangle102.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 50vh;
-    background-color: #0D0E43;
-    display: flex;
+.hero .row{
     justify-content: center;
+    gap: 80px;
     align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
 }
 
-.backgroundSectionContent{
+
+.hero .right, .hero .left{
+    flex-basis:300px;
+    flex-grow: 1;
+}
+
+.hero .left .col{
+    gap: 35px;
+}
+
+.hero .left .info .title{
     font-family: "Josefin Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.backgroundSectionContent h3{
-    font-size: 35px;
-    color: var(--text-color);
-    font-weight: 700;
-    line-height: 155%;
-}
-
-.backgroundSectionContent .btn{
-    font-family: "Josefin Sans", sans-serif;
-    color: var(--secondary-background-color);
     width: fit-content;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 1.5%;
+    line-height: 170.5%;
 }
 
-@media screen and (min-width:0) and (max-width:800px) {
-
-    .backgroundSectionContent h3{
-        font-size: 22px;
-        line-height: 120%;
-    }
-
-    .backgroundSectionContent .btn{
-        font-size: 16px;
-    }
-
+.hero .left .info .advert{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--pink-main-color);
+    padding-bottom: 12px;
 }
 
-@media screen and (min-width:801px) and (max-width:1200px) {
-
-    .backgroundSectionContent h3{
-        font-size: 27px;
-        line-height: 125%;
-    }
+.hero .left .info .about{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--footer-text-color);
 }
 
+.hero .left .col button{
+    width: fit-content;
+}
 
-/*End background section*/
+.hero .right .image{
+    max-height: 550px;
+}
+
+.hero .right .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:750px) {
+    .hero .right{
+        flex-basis:450px;
+        flex-grow: 0;
+    }
+
+    .hero .right .image{
+        max-height: 450px;
+    }
+}
+/* End Hero Section */
 
 /*
 --------------------------------------------
@@ -405,3 +294,193 @@ Start featured products Section
         width: 100%;
     }
 }
+
+/*end featured product section*/
+
+
+/*
+--------------------------------------------
+Start Background Section
+--------------------------------------------
+*/
+
+.backgroundSection{
+    background-image: url(./../images/Rectangle102.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    background-color: #0D0E43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.backgroundSectionContent{
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.backgroundSectionContent h3{
+    font-size: 35px;
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 155%;
+}
+
+.backgroundSectionContent .btn{
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--secondary-background-color);
+    width: fit-content;
+    font-size: 17px;
+}
+
+@media screen and (min-width:0) and (max-width:800px) {
+
+    .backgroundSectionContent h3{
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+    .backgroundSectionContent .btn{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1200px) {
+
+    .backgroundSectionContent h3{
+        font-size: 27px;
+        line-height: 125%;
+    }
+}
+
+
+/*End background section*/
+
+
+
+/*
+--------------------------------------------
+Start footer
+--------------------------------------------
+*/
+
+.footer{
+    background-color: var(--secondary-background-color);
+    padding: 100px 0;
+}
+
+.footer .row{
+    align-items: flex-start;
+    gap: 30px
+}
+
+.footer .left-side{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: calc( (100% - 30px) / ( 8 / 3 ) );
+}
+
+.footer .left-side form{
+    gap: 0;
+    border-radius: 3px;
+    background-color: var(--primary-background-color);
+}
+
+.footer .left-side form input{
+    border-radius: 3px;
+    padding: 15px 20px;
+    width: 240px;
+}
+
+
+.footer .left-side form input::placeholder{
+    color: #8A8FB9;
+}
+
+.footer .left-side .form button{
+    color: var(--secondary-background-color);
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.footer .left-side .address .col{
+    gap: 10px;
+}
+
+.footer .left-side .address h2, 
+.footer .left-side .address p
+{
+    font-size: 16px;
+    color: var(--footer-text-color);
+    font-weight: 400;
+}
+
+.footer .right-side{
+    width: calc( (100% - 30px) / ( 8 / 5) );
+}
+
+.footer .list .col{
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.footer .list h2{
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
+
+.footer .list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 23.32px;
+}
+
+.footer .list li a{
+    color: var(--footer-text-color);
+}
+
+@media screen and (min-width:0) and (max-width:1200px) {
+
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .footer .left-side{
+        width: 100%;
+    }
+
+    .footer .right-side{
+        width: 100%;
+    }
+
+    .footer .left-side form input{
+        padding: 7px 10px;
+    }
+
+    .footer .left-side form input{
+        width: fit-content;
+    }
+
+    .footer .list{
+        gap: 30px;
+    }
+
+}
+
+/*End Footer*/
