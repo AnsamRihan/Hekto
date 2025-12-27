@@ -11,6 +11,7 @@
     --h2-color: #1A0B5B;
     --product-card-img-background-color: #F6F7FB;
     --hero-bg-color: #F2F0FF;
+    --card-hover-color: #2F1AC4;
 }
 /*
 --------------------------------------------
@@ -24,6 +25,7 @@ Start header
     top: 0;
     padding: 25px 0;
     background-color: var(--primary-background-color);
+    z-index: 9999;
 }
 
 .header ul,
@@ -211,6 +213,66 @@ Start featured products Section
     align-items: center;
     height: 236px;
     background-color: var(--product-card-img-background-color);
+    position: relative;
+}
+
+.products .product-img .cart-love-more-buttons{
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    display: flex;
+    gap: 16px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.products .product-img .cart-love-more-buttons button{
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.products .product-img .cart-love-more-buttons .cart{
+    background-color: var(--secondary-background-color);
+    border-radius: 50%;
+    padding: 7px 6px 4px 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.products .product-img .cart-love-more-buttons .cart img{
+    height: 19px;
+    width: 19px;
+}
+
+.products .product-img .cart-love-more-buttons .love img{
+    height: 17px;
+    width: 17px;
+}
+
+.products .product-img .cart-love-more-buttons .plus img{
+    height: 15px;
+    width: 15px;
+}
+
+.products .product-img .view-details-btn{
+    background-color: #08D15F;
+    padding: 8px 13px;
+    border: 0;
+    color: var(--primary-background-color);
+    border-radius: 2px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.products .product-img .view-details-btn:hover{
+    background-color: #07ab4e;
 }
 
 .products .product-details{
@@ -218,6 +280,7 @@ Start featured products Section
     flex-direction: column;
     align-items: center;
     gap:12px;
+    transition: .2s;
 }
 
 .products .product-details h3{
@@ -265,6 +328,32 @@ Start featured products Section
 
 .products .product-info .product-code{
     font-family: "Josefin Sans", sans-serif;
+}
+
+
+.products .product:hover .product-details{
+    background-color: var(--card-hover-color);
+    color: var(--primary-background-color);
+}
+
+.products .product:hover .product-details h3{
+    color: var(--primary-background-color);
+}
+
+.products .product:hover .product-details .product-colors .color3{
+    background-color: #FFEAC1;
+}
+
+.products .product:hover .product-details .product-info{
+    color: var(--primary-background-color);
+}
+
+.products .product:hover .product-img .cart-love-more-buttons{
+    opacity: 1;
+}
+
+.products .product:hover .product-img .view-details-btn{
+    opacity: 1;
 }
 
 @media screen and (min-width:801px) and (max-width: 1000px) {
