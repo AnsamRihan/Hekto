@@ -9,6 +9,17 @@ a{
     text-decoration: none;
 }
 
+input {
+    border: 0;
+    padding-left: 20px;
+    font-family: "Lato", san s-serif;
+    font-size: 16px;
+}
+
+.padding-y{
+    padding: 50px 0;
+}
+
 .container{
     width: 100%;
     padding: 0 70px; 
@@ -23,11 +34,9 @@ a{
     flex-wrap: wrap;
 }
 
-input {
-    border: 0;
-    padding-left: 20px;
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
+.col{
+    display: flex;
+    flex-direction: column;
 }
 
 .btn{

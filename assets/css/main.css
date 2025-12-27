@@ -18,7 +18,7 @@ Start header
 */
 
 .header{
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     padding: 25px 0;
@@ -146,9 +146,7 @@ Start footer
     margin: 3px;
 }
 
-.footer .left-side .address{
-    display: flex;
-    flex-direction: column;
+.footer .left-side .address .col{
     gap: 10px;
 }
 
@@ -164,9 +162,7 @@ Start footer
     width: calc( (100% - 30px) / ( 8 / 5) );
 }
 
-.footer .list{
-    display: flex;
-    flex-direction: column;
+.footer .list .col{
     gap: 45px;
     flex-wrap: wrap;
 }
