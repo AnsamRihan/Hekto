@@ -14,6 +14,7 @@
     --card-hover-color: #2F1AC4;
     --latest-card-bg-color: #F7F7F7;
     --old-price-color: #FB2448;
+    --ofer-info-color: rgba(26, 11, 91, 0.3);
 }
 /*
 --------------------------------------------
@@ -225,7 +226,9 @@ Start featured products Section
     gap: 48px;
 }
 
-.featuredProducts .container h2, .latest-products .container h2{
+.featuredProducts .container h2, 
+.latest-products .container h2,
+.shopex-offers .col h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
@@ -411,7 +414,9 @@ Start featured products Section
         width: calc((100% - 25px) / 2);
     }
 
-    .featuredProducts .container h2, .latest-products .container h2{
+    .featuredProducts .container h2, 
+    .latest-products .container h2,
+    .shopex-offers .col h2{
         font-size: 33px;
     }
 }
@@ -426,7 +431,9 @@ Start featured products Section
         width: 100%;
     }
 
-    .featuredProducts .container h2, .latest-products .container h2{
+    .featuredProducts .container h2,
+    .latest-products .container h2,
+    .shopex-offers .col h2{
         font-size: 26px;
     }
 }
@@ -526,6 +533,7 @@ Start latest products Section
     justify-self: center;
     align-items: center;
 }
+
 .latest-products .products .product:hover .product-img-container .cart-love-more-buttons{
     opacity: 1;
 }
@@ -666,6 +674,55 @@ Start latest products Section
 
 /*
 --------------------------------------------
+Start shopex offers Section
+--------------------------------------------
+*/
+
+.shopex-offers .col{
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopex-offers .offers .row{
+    justify-content: center;
+    gap: 28px;
+}
+
+.shopex-offers .offers .offer {
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.095);
+    padding: 50px 26px;
+    flex: 1 0 290px;
+}
+
+.shopex-offers .offers .offer .col{
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.shopex-offers .offers .offer .icon{
+    height: 65px;
+}
+
+.shopex-offers .offers .offer .offer-name{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.shopex-offers .offers .offer .offer-info{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ofer-info-color);
+}
+
+
+/*end shopex offers Section*/
+
+/*
+--------------------------------------------
 Start Background Section
 --------------------------------------------
 */
@@ -731,8 +788,6 @@ Start Background Section
 
 
 /*End background section*/
-
-
 
 /*
 --------------------------------------------
