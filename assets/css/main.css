@@ -230,7 +230,8 @@ Start featured products Section
 .featuredProducts .container h2, 
 .latest-products .container h2,
 .shopex-offers .col h2,
-.trending-products h2{
+.trending-products h2,
+.latest-blog h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
@@ -419,7 +420,8 @@ Start featured products Section
     .featuredProducts .container h2, 
     .latest-products .container h2,
     .shopex-offers .col h2,
-    .trending-products h2{
+    .trending-products h2,
+    .latest-blog h2{
         font-size: 33px;
     }
 }
@@ -437,7 +439,8 @@ Start featured products Section
     .featuredProducts .container h2,
     .latest-products .container h2,
     .shopex-offers .col h2,
-    .trending-products h2{
+    .trending-products h2,
+    .latest-blog h2{
         font-size: 26px;
     }
 }
@@ -807,6 +810,7 @@ Start trending products Section
 
 /*end trending products Section*/
 
+
 /*
 --------------------------------------------
 Start Background Section
@@ -874,6 +878,127 @@ Start Background Section
 
 
 /*End background section*/
+
+
+/*
+--------------------------------------------
+Start Blog Section
+--------------------------------------------
+*/
+
+.latest-blog .col{
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-blog .blogs .row{
+    justify-content: center;
+    gap: 56px;
+}
+
+.latest-blog .blogs .blog{
+    box-shadow: 0 8px 40px rgba(49, 32, 138, 0.05);
+    flex: 1 0 300px;
+}
+
+.latest-blog .blogs .blog .col{
+    gap: 20px;
+}
+
+.latest-blog .blogs .blog .blog-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.latest-blog .blogs .blog .blog-details {
+    padding: 19px 19px 35px 19px;
+}
+
+
+.latest-blog .blogs .blog .blog-details .col{
+    gap: 31px;
+    align-items: flex-start;
+}
+
+.latest-blog .blogs .blog .blog-details .blogAthurDate{
+    display: flex;
+    gap: 29px;
+}
+
+.latest-blog .blogs .blog .blog-details .blogAthurDate .author,
+.latest-blog .blogs .blog .blog-details .blogAthurDate .date{
+    display: flex;
+    gap:4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-blog .blogs .blog .blog-details .blogAthurDate .author img,
+.latest-blog .blogs .blog .blog-details .blogAthurDate .date img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+}
+
+.latest-blog .blogs .blog .blog-details .blog-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.latest-blog .blogs .blog .blog-details .blog-info .blog-name{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.latest-blog .blogs .blog:hover .blog-details .blog-info .blog-name{
+    color: var(--pink-main-color);
+}
+
+.latest-blog .blogs .blog .blog-details .blog-info .blog-brief{
+    font-size: 16px;
+    font-weight: 400;
+    color: #72718F;
+}
+
+.latest-blog .blogs .blog .blog-details .blog-info .read-more{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.latest-blog .blogs .blog:hover .blog-details .blog-info .read-more{
+    color: var(--pink-main-color);
+}
+
+@media screen and (min-width:0) and (max-width:500px) {
+    .latest-blog .col {
+        gap: 40px;
+    }
+
+    .latest-blog .blogs .row {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:800px) {
+    .latest-blog .col {
+        gap: 50px;
+    }
+
+    .latest-blog .blogs .row {
+        gap: 30px;
+    }
+}
+
+/*End Blog section*/
 
 /*
 --------------------------------------------
