@@ -787,6 +787,10 @@ Start trending products Section
     color: var(--text-color);
 }
 
+.trending-products .products .product:hover .product-details{
+    color: var(--primary-background-color);
+}
+
 .trending-products .products .product .product-details .product-name{
     font-size: 16px;
     font-weight: 700;
