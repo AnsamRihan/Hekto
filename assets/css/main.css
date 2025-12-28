@@ -231,6 +231,7 @@ Start featured products Section
 .latest-products .container h2,
 .shopex-offers .col h2,
 .trending-products h2,
+.top-categories h2,
 .latest-blog h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
@@ -421,6 +422,7 @@ Start featured products Section
     .latest-products .container h2,
     .shopex-offers .col h2,
     .trending-products h2,
+    .top-categories h2,
     .latest-blog h2{
         font-size: 33px;
     }
@@ -440,6 +442,7 @@ Start featured products Section
     .latest-products .container h2,
     .shopex-offers .col h2,
     .trending-products h2,
+    .top-categories h2,
     .latest-blog h2{
         font-size: 26px;
     }
@@ -810,6 +813,91 @@ Start trending products Section
 
 /*end trending products Section*/
 
+/*
+--------------------------------------------
+Start top categories Section
+--------------------------------------------
+*/
+
+.top-categories .col{
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+
+.top-categories .products .row{
+    justify-content: center;
+    gap: 39px;
+}
+
+.top-categories .products .product{
+    flex: 1 0 250px;
+}
+
+.top-categories .products .product .col{
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.top-categories .products .product .product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 60px;
+    background-color: var(--product-card-img-background-color);
+    border-radius: 50%;
+    box-shadow: 0 8px 40px rgba(49, 32, 138, 0.05);
+}
+
+.top-categories .products .product:hover .product-img{
+    box-shadow: -6px 8px 0px rgb(131, 111, 232);
+}
+
+.top-categories .products .product .product-img img{
+    max-height: 178px;
+}
+
+.top-categories .products .product .view-shop{
+   position: absolute;
+   bottom: 30px;
+   padding: 8px 18px;
+   color: var(--primary-background-color);
+   background-color: #08D15F;
+   border: 0;
+   border-radius: 2px;
+   opacity: 0;
+   transition: .2s;
+}
+
+.top-categories .products .product:hover .view-shop{
+   opacity: 1;
+}
+
+.top-categories .products .product .product-details{
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.top-categories .products .product .product-details .product-name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.top-categories .products .product .product-details .product-price{
+    font-size: 16px;
+}
+
+
+
+/*end top categories Section*/
 
 /*
 --------------------------------------------
