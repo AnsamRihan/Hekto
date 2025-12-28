@@ -327,6 +327,7 @@ Start featured products Section
     align-items: center;
     gap:12px;
     transition: .2s;
+    color: var(--text-color);
 }
 
 .featuredProducts .products .product-details h3{
@@ -593,6 +594,7 @@ Start latest products Section
 .latest-products .products .product .product-details{
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 .latest-products .products .product .product-details .row{
@@ -710,6 +712,7 @@ Start shopex offers Section
     justify-content: center;
     align-items: center;
     gap: 25px;
+    color: var(--text-color);
 }
 
 .shopex-offers .offers .offer .icon{
@@ -781,6 +784,7 @@ Start trending products Section
     display: flex;
     flex-direction: column;
     gap: 8px;
+    color: var(--text-color);
 }
 
 .trending-products .products .product .product-details .product-name{
@@ -1002,6 +1006,7 @@ Start Blog Section
 
 .latest-blog .blogs .blog .blog-details {
     padding: 19px 19px 35px 19px;
+    color: var(--text-color);
 }
 
 
