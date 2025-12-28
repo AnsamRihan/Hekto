@@ -15,6 +15,7 @@
     --latest-card-bg-color: #F7F7F7;
     --old-price-color: #FB2448;
     --ofer-info-color: rgba(26, 11, 91, 0.3);
+    --trending-card-img-bg: #F5F6F8;
 }
 /*
 --------------------------------------------
@@ -228,7 +229,8 @@ Start featured products Section
 
 .featuredProducts .container h2, 
 .latest-products .container h2,
-.shopex-offers .col h2{
+.shopex-offers .col h2,
+.trending-products h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
@@ -416,7 +418,8 @@ Start featured products Section
 
     .featuredProducts .container h2, 
     .latest-products .container h2,
-    .shopex-offers .col h2{
+    .shopex-offers .col h2,
+    .trending-products h2{
         font-size: 33px;
     }
 }
@@ -433,7 +436,8 @@ Start featured products Section
 
     .featuredProducts .container h2,
     .latest-products .container h2,
-    .shopex-offers .col h2{
+    .shopex-offers .col h2,
+    .trending-products h2{
         font-size: 26px;
     }
 }
@@ -691,7 +695,7 @@ Start shopex offers Section
 
 .shopex-offers .offers .offer {
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.095);
+    box-shadow: 0 8px 40px rgba(49, 32, 138, 0.05);
     padding: 50px 26px;
     flex: 1 0 290px;
 }
@@ -720,6 +724,78 @@ Start shopex offers Section
 
 
 /*end shopex offers Section*/
+
+/*
+--------------------------------------------
+Start trending products Section
+--------------------------------------------
+*/
+
+.trending-products .col{
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+}
+
+.trending-products .products .product{
+    flex: 1 0 250px;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(49, 32, 138, 0.05);
+    padding: 11px;
+    padding-bottom: 32px;
+}
+
+.trending-products .products .row{
+    justify-content: center;
+    gap: 29px;
+}
+
+.trending-products .products .product .col{
+    gap: 15px;
+}
+
+.trending-products .products .product .product-img{
+    background-color: var(--trending-card-img-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.trending-products .products .product .product-img img{
+    height: 187px;
+}
+
+.trending-products .products .product .product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trending-products .products .product .product-details .product-name{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.trending-products .products .product .product-details .product-price{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.trending-products .products .product .product-details .product-price .new-price{
+    font-size: 14px;
+}
+
+.trending-products .products .product .product-details .product-price .old-price{
+    font-size: 12px;
+    text-decoration: line-through;
+    color: rgba(21, 24, 117, 0.3);
+}
+
+/*end trending products Section*/
 
 /*
 --------------------------------------------
