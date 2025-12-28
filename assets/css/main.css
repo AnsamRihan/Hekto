@@ -745,6 +745,11 @@ Start trending products Section
     padding-bottom: 32px;
 }
 
+.trending-products .products .product:hover{
+    background-color: var(--card-hover-color);
+    color: var(--primary-background-color);
+}
+
 .trending-products .products .row{
     justify-content: center;
     gap: 29px;
@@ -794,6 +799,11 @@ Start trending products Section
     text-decoration: line-through;
     color: rgba(21, 24, 117, 0.3);
 }
+
+.trending-products .products .product:hover .product-details .product-price .old-price{
+    color: rgba(167, 167, 230, 0.878);
+}
+
 
 /*end trending products Section*/
 
